@@ -18,13 +18,13 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDarkMode }) => {
     // Apply subtle background animation to the navbar
     if (navbarRef.current) {
       // Use the utility function for background animation with navColors
-      const navColors = [
+      /* const navColors = [
         'rgba(110, 37, 214, 0.1)', // Purple
         'rgba(36, 107, 253, 0.1)', // Blue
         'rgba(29, 209, 161, 0.1)', // Green
         'rgba(255, 107, 107, 0.1)', // Red
         'rgba(255, 159, 26, 0.1)'  // Orange
-      ];
+      ]; */
       
       // Use the utility function
       animateBackground(navbarRef.current);

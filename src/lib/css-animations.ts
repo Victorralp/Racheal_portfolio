@@ -357,7 +357,7 @@ export const createParticlesBackground = (container: HTMLElement, count: number 
     '#34495e'  // Dark blue
   ];
   
-  const dataElements = [
+  /* const dataElements = [
     // Chart types
     'pie-chart',
     'bar-chart',
@@ -373,7 +373,7 @@ export const createParticlesBackground = (container: HTMLElement, count: number 
     // Other elements
     'data-point',
     'math-symbol'
-  ];
+  ]; */
   
   const mathSymbols = [
     '∑', '∫', '√', '%', '+', '×', '=', '∞', '#', 'π', 'Σ', '∆', 'μ', 'σ', '$', '€', '£', '¥'
@@ -406,7 +406,7 @@ export const createParticlesBackground = (container: HTMLElement, count: number 
   for (let i = 0; i < count; i++) {
     const elementType = weightedElements[Math.floor(Math.random() * weightedElements.length)];
     const color = colors[Math.floor(Math.random() * colors.length)];
-    const size = elementType === 'data-point' ? 8 : (Math.random() * 30 + 20);
+    // const size = elementType === 'data-point' ? 8 : (Math.random() * 30 + 20);
     const animationType = Math.random() > 0.6 ? 'float' : (Math.random() > 0.5 ? 'float-reverse' : 'float-horizontal');
     const animationDuration = Math.random() * 25 + 15; // Between 15 and 40 seconds
     const animationDelay = Math.random() * 8;

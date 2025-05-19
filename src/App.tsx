@@ -6,6 +6,7 @@ import About from './components/sections/About';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CssBackground from './components/background/CssBackground';
+// import ParticleBackground from './components/background/ParticleBackground';
 import Hero from './components/sections/Hero';
 import Projects from './components/sections/Projects';
 import Resume from './components/sections/Resume';
@@ -14,7 +15,7 @@ import Testimonials from './components/sections/Testimonials';
 import Skills from './components/sections/Skills';
 import Footer from './components/layout/Footer';
 // import ColorfulBackground from './components/background/ColorfulBackground';
-import { addTextGradient, setupButtonHoverEffect, setupCardHoverEffect } from './lib/css-animations';
+import { setupButtonHoverEffect, setupCardHoverEffect } from './lib/css-animations';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
